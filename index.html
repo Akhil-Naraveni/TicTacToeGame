@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <style>
+        #container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #gridcontainer{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            width: 50vw;
+            text-align: center;
+            row-gap: 6px;
+            column-gap: 6px;
+        }
+        #gridcontainer section{
+            border: 1px solid black;
+            padding: 6px;
+            height: 40px;
+            box-shadow: 6px 8px 8px grey;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            font-size: large;
+            font-weight: bold;
+        }
+        h3{
+            color: rgb(43, 125, 165);
+        }
+        h1{
+            color: rgb(27, 85, 66);
+            text-decoration: underline;
+        }
+        #resultText{
+            border: 2px solid grey;
+            padding: 4px;
+            padding-left: 12px;
+            padding-right: 12px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: large;
+            color: brown;
+            font-weight: bold;
+            box-shadow: 6px 8px 8px lightblue;
+        }
+        #resetBtn{
+            padding: 4px;
+            background-color: antiquewhite;
+            color: black;
+            border-radius: 8px;
+            width: 70px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1 >Tic Tac Toe Game</h1>
+        <h3 style="color: lightpink;"> You can start the Game by just tapping the boxes.</h3>
+        <h3>Note : Player one will start with "X" & player two with "O".</h3>
+        <div id="gridcontainer">
+            <section id="box1" onclick="func1(); CheckFunc()"></section>
+            <section id="box2" onclick="func2(); CheckFunc()"></section>
+            <section id="box3" onclick="func3(); CheckFunc()"></section>
+            <section id="box4" onclick="func4(); CheckFunc()"></section>
+            <section id="box5" onclick="func5(); CheckFunc()"></section>
+            <section id="box6" onclick="func6(); CheckFunc()"></section>
+            <section id="box7" onclick="func7(); CheckFunc()"></section>
+            <section id="box8" onclick="func8(); CheckFunc()"></section>
+            <section id="box9" onclick="func9(); CheckFunc()"></section>
+        </div><br>
+        <button id="resetBtn"> Reset</button>
+        <p id="resultText"></p>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

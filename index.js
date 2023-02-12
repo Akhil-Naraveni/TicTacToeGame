@@ -18,9 +18,9 @@ function func1() {
         }
         flag += 1
     }
-    if(box1El.innerText === "X"){
+    if (box1El.innerText === "X") {
         box1El.style.backgroundColor = "lightblue"
-    }else if(box1El.innerText === "O"){
+    } else if (box1El.innerText === "O") {
         box1El.style.backgroundColor = "lightpink"
     }
 }
@@ -33,12 +33,12 @@ function func2() {
         }
         flag += 1
     }
-    if(box2El.innerText === "X"){
+    if (box2El.innerText === "X") {
         box2El.style.backgroundColor = "lightblue"
-    }else if(box2El.innerText === "O"){
+    } else if (box2El.innerText === "O") {
         box2El.style.backgroundColor = "lightpink"
     }
-    
+
 
 }
 function func3() {
@@ -46,9 +46,9 @@ function func3() {
         box3El.innerText = flag % 2 === 0 ? "X" : "O"
         flag += 1
     }
-    if(box3El.innerText === "X"){
+    if (box3El.innerText === "X") {
         box3El.style.backgroundColor = "lightblue"
-    }else if(box3El.innerText === "O"){
+    } else if (box3El.innerText === "O") {
         box3El.style.backgroundColor = "lightpink"
     }
 }
@@ -57,9 +57,9 @@ function func4() {
         box4El.innerText = flag % 2 === 0 ? "X" : "O"
         flag += 1
     }
-    if(box4El.innerText === "X"){
+    if (box4El.innerText === "X") {
         box4El.style.backgroundColor = "lightblue"
-    }else if(box4El.innerText === "O"){
+    } else if (box4El.innerText === "O") {
         box4El.style.backgroundColor = "lightpink"
     }
 }
@@ -68,9 +68,9 @@ function func5() {
         box5El.innerText = flag % 2 === 0 ? "X" : "O"
         flag += 1
     }
-    if(box5El.innerText === "X"){
+    if (box5El.innerText === "X") {
         box5El.style.backgroundColor = "lightblue"
-    }else if(box5El.innerText === "O"){
+    } else if (box5El.innerText === "O") {
         box5El.style.backgroundColor = "lightpink"
     }
 }
@@ -79,9 +79,9 @@ function func6() {
         box6El.innerText = flag % 2 === 0 ? "X" : "O"
         flag += 1
     }
-    if(box6El.innerText === "X"){
+    if (box6El.innerText === "X") {
         box6El.style.backgroundColor = "lightblue"
-    }else if(box6El.innerText === "O"){
+    } else if (box6El.innerText === "O") {
         box6El.style.backgroundColor = "lightpink"
     }
 }
@@ -90,9 +90,9 @@ function func7() {
         box7El.innerText = flag % 2 === 0 ? "X" : "O"
         flag += 1
     }
-    if(box7El.innerText === "X"){
+    if (box7El.innerText === "X") {
         box7El.style.backgroundColor = "lightblue"
-    }else if(box7El.innerText === "O"){
+    } else if (box7El.innerText === "O") {
         box7El.style.backgroundColor = "lightpink"
     }
 }
@@ -101,9 +101,9 @@ function func8() {
         box8El.innerText = flag % 2 === 0 ? "X" : "O"
         flag += 1
     }
-    if(box8El.innerText === "X"){
+    if (box8El.innerText === "X") {
         box8El.style.backgroundColor = "lightblue"
-    }else if(box8El.innerText === "O"){
+    } else if (box8El.innerText === "O") {
         box8El.style.backgroundColor = "lightpink"
     }
 }
@@ -112,9 +112,9 @@ function func9() {
         box9El.innerText = flag % 2 === 0 ? "X" : "O"
         flag += 1
     }
-    if(box9El.innerText === "X"){
+    if (box9El.innerText === "X") {
         box9El.style.backgroundColor = "lightblue"
-    }else if(box9El.innerText === "O"){
+    } else if (box9El.innerText === "O") {
         box9El.style.backgroundColor = "lightpink"
     }
 }
@@ -131,28 +131,47 @@ function CheckFunc() {
     let box7 = document.getElementById("box7").innerText
     let box8 = document.getElementById("box8").innerText
     let box9 = document.getElementById("box9").innerText
-    if(box1 === "X" && box2 === "X" && box3 === "X" || box1 === "X" && box4 === "X" && box7 === "X" ||
-    box1 === "X" && box5 === "X" && box9 === "X" || box2 === "X" && box5 === "X" && box8 === "X" ||
-    box3 === "X" && box6 === "X" && box9 === "X" || box3 === "X" && box5 === "X" && box7 === "X" ||
-    box4 === "X" && box5 === "X" && box6 === "X" || box7 === "X" && box8 === "X" && box9 === "X"){
+    if (box1 === "X" && box2 === "X" && box3 === "X" || box1 === "X" && box4 === "X" && box7 === "X" ||
+        box1 === "X" && box5 === "X" && box9 === "X" || box2 === "X" && box5 === "X" && box8 === "X" ||
+        box3 === "X" && box6 === "X" && box9 === "X" || box3 === "X" && box5 === "X" && box7 === "X" ||
+        box4 === "X" && box5 === "X" && box6 === "X" || box7 === "X" && box8 === "X" && box9 === "X") {
         resultText.innerText = "Player One Won"
-    }else if(box1 === "O" && box2 === "O" && box3 === "O" || box1 === "O" && box4 === "O" && box7 === "O" ||
-    box1 === "O" && box5 === "O" && box9 === "O" || box2 === "O" && box5 === "O" && box8 === "O" ||
-    box3 === "O" && box6 === "O" && box9 === "O" || box3 === "O" && box5 === "O" && box7 === "O" ||
-    box4 === "O" && box5 === "O" && box6 === "O" || box7 === "O" && box8 === "O" && box9 === "O"){
+        resultText.style.padding = "4px"
+        resultText.style.border = "2px solid grey"
+        resultText.style.color = "brown"
+        resultText.style.fontSize = "large"
+        resultText.style.fontWeight = "bold"
+        resultText.style.boxShadow = "box-shadow: 6px 8px 8px lightblue"
+    } else if (box1 === "O" && box2 === "O" && box3 === "O" || box1 === "O" && box4 === "O" && box7 === "O" ||
+        box1 === "O" && box5 === "O" && box9 === "O" || box2 === "O" && box5 === "O" && box8 === "O" ||
+        box3 === "O" && box6 === "O" && box9 === "O" || box3 === "O" && box5 === "O" && box7 === "O" ||
+        box4 === "O" && box5 === "O" && box6 === "O" || box7 === "O" && box8 === "O" && box9 === "O") {
         resultText.innerText = "Player Two Won"
-    }else if(box1 && box2 && box3 && box4 && box5 && box6 && box7 && box8 && box9){
+        resultText.style.padding = "4px"
+        resultText.style.border = "2px solid grey"
+        resultText.style.color = "brown"
+        resultText.style.fontSize = "large"
+        resultText.style.fontWeight = "bold"
+        resultText.style.boxShadow = "box-shadow: 6px 8px 8px lightblue"
+    } else if (box1 && box2 && box3 && box4 && box5 && box6 && box7 && box8 && box9) {
         resultText.innerText = "Tie"
+        resultText.style.padding = "4px"
+        resultText.style.border = "2px solid grey"
+        resultText.style.color = "brown"
+        resultText.style.fontSize = "large"
+        resultText.style.fontWeight = "bold"
+        resultText.style.boxShadow = "box-shadow: 6px 8px 8px lightblue"
     }
 
-    
-    
+
+
+
 }
 
 let resetBtn = document.getElementById("resetBtn")
 resetBtn.onclick = function () {
     resultText.innerText = ""
-
+    resultText.style.padding = ""
     box1El.innerText = ""
     box1El.style.backgroundColor = ""
     box2El.innerText = ""

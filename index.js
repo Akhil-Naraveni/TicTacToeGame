@@ -118,8 +118,16 @@ function func9() {
         box9El.style.backgroundColor = "lightpink"
     }
 }
-
+let playerTurn = document.getElementById("turn")
 function CheckFunc() {
+    if(flag %2===0){
+        playerTurn.innerText = "Player 1 Turn"
+    }else{
+        playerTurn.innerText = "Player 2 Turn"
+    }
+    if(flag === 9){
+        playerTurn.innerText = "Players Turns Over"
+    }
     resultText.innerText = ""
     console.log("Check Function called")
     let box1 = document.getElementById("box1").innerText
@@ -142,6 +150,7 @@ function CheckFunc() {
         resultText.style.fontSize = "large"
         resultText.style.fontWeight = "bold"
         resultText.style.boxShadow = "box-shadow: 6px 8px 8px lightblue"
+        playerTurn.innerText = ""
     } else if (box1 === "O" && box2 === "O" && box3 === "O" || box1 === "O" && box4 === "O" && box7 === "O" ||
         box1 === "O" && box5 === "O" && box9 === "O" || box2 === "O" && box5 === "O" && box8 === "O" ||
         box3 === "O" && box6 === "O" && box9 === "O" || box3 === "O" && box5 === "O" && box7 === "O" ||
@@ -153,6 +162,7 @@ function CheckFunc() {
         resultText.style.fontSize = "large"
         resultText.style.fontWeight = "bold"
         resultText.style.boxShadow = "box-shadow: 6px 8px 8px lightblue"
+        playerTurn.innerText = ""
     } else if (box1 && box2 && box3 && box4 && box5 && box6 && box7 && box8 && box9) {
         resultText.innerText = "Tie"
         resultText.style.padding = "4px"
@@ -161,6 +171,7 @@ function CheckFunc() {
         resultText.style.fontSize = "large"
         resultText.style.fontWeight = "bold"
         resultText.style.boxShadow = "box-shadow: 6px 8px 8px lightblue"
+        playerTurn.innerText = ""
     }
 
 
